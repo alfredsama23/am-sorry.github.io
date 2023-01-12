@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<title>sorry</title>
+		<style>
+			body{
+				background-color: #9AC1F0;
+			}
+			p {
+				text-align: center;
+				font-size: 50px;
+				font-family: Cursive ;
+			}
+			img {
+				display: block;
+				margin: 0 auto;
+				width: 40%;
+			}
+			#botao1 {
+				position: fixed;
+				font-size: 25px;
+				top: 30%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			#botao2 {
+				position: absolute;
+			}
+			#img1 {
+				border-radius: 25%;
+			}
+			</style>
+	</head>
+	<body>
+		<p>Do you wanna Date me?</p>
+		<img id="img1" src="https://media1.giphy.com/media/cQ75oh2k0p5rSpur1L/giphy.gif" alt="GIF animado">
+
+		<button id="botao1">Yes!</button>
+		<button id="botao2">No your dumb</button>
+		<script>
+			setInterval(function() {
+				var botao2 = document.getElementById('botao2');
+				var x = Math.random() * window.innerWidth;
+				var y = Math.random() * window.innerHeight;
+				botao2.style.left = x + 'px';
+				botao2.style.top = y + 'px';
+			}, 500);
+
+			document.getElementById('botao1').addEventListener('click', function() {
+				alert('I LOV YOUU S2 S2');
+			});
+		</script>
+	</body>
+</html>
